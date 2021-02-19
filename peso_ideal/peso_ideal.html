@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="style_peso_ideal.css" type="text/css">
+  <title>Peso Ideal</title>
+</head>
+
+<body>
+
+  <main>
+
+    <form action="#">
+
+      <h1>Peso Ideal</h1>
+
+      <section>
+        <div class="options">
+          <div class="option-gender">
+            <span>SEXO</span>
+            <select name="" id="cboGender">
+              <option value="0">Seleccionar</option>
+              <option>Femenino</option>
+              <option>Masculino</option>
+            </select>
+          </div>
+
+
+          <div class="option-height">
+            <span>ESTATURA</span>
+            <div>
+              <input type="text" name="heigth" id="heigth" maxlength="3" required>
+            </div>
+          </div>
+        </div>
+        <span id="calculate" onclick="calcular_peso_ideal()">Calcular
+          <i class="fas fa-arrow-right"></i>
+        </span>
+
+        <div>
+          <span>PARA ESTE CÁLCULO, SE TIENE EN CUENTA LA FÓRMULA DE LORENTZ</span>
+        </div>
+      </section>
+
+    </form>
+
+  </main>
+
+  <script src="peso_ideal.js"></script>
+
+</body>
+
+</html>
